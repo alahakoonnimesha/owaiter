@@ -1,0 +1,20 @@
+h2
+{
+  text-align:center;
+  
+}
+
+button
+{
+  text-align: 50%;
+}
+.card
+{
+  background-color: transparent;
+}
+input.ng-invalid.ng-dirty
+{
+  border-color: #e91e63 !important;
+  box-shadow:0 1px 0 0  #e91e63 !important;
+
+}
