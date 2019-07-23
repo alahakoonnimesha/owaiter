@@ -1,0 +1,3 @@
+[submodule "resclient"]
+	path = resclient
+	url = https://github.com/Nimesha-Alahakoon/owaiter3.git.

@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule ,Routes} from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
-
 import {FormsModule} from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { UsersComponent } from './components/admin/users/users.component';
 import {UserService} from './sharedservices/userservice/user.service';
 import {AdminService} from './sharedservices/adminservice/admin.service';
-import {AuthService} from './sharedservices/authservice/auth.service';
 import {TableService} from './sharedservices/tableservice/table.service';
+import {AuthenticationService} from './sharedservices/authenticationservice/authentication.service';
+import {AuthService} from './sharedservices/authservice/auth.service';
 import {FooditemService} from './sharedservices/fooditemservice/fooditem.service';
 import { SignupComponent } from './components/signup/signup.component';
 import { MenubarComponent } from './components/menubar/menubar.component';
@@ -81,7 +81,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule
   ],
-  providers: [UserService,TableService,FooditemService,AdminService,AuthService
+  providers: [UserService,TableService,FooditemService,AdminService,AuthenticationService,AuthService
             ],
         
 

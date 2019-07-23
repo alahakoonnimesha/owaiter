@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>Home</title>
+
+        
+
+       
+
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" 
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+         <!-- Compiled and minified CSS -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+         <!-- Compiled and minified JavaScript -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+        <!-- icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+         <!-- javascript -->
+         <script src= "Homejs.js" type="text/javascript"></script>
+
+        <!-- style -->
+        <link rel="stylesheet" href="HomeStyle.css">
+    
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo">Logo</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#signin" class="modal-trigger">Sign in</a></li>
+                <li><a href="#signup" class="modal-trigger">Sign Up</a></li>
+                <li><a href="collapsible.html">Log Out</a></li>
+              </ul>
+            </div>
+          </nav>
+
+  <!-- Sign in -->
+
+  <div class="modal" id="signin">
+    <h5 class="modal-close">&#10005</h5>
+
+    <div class="modal-content center">
+        <h4>Sign In</h4><br>
+      <form action="#">
+        <div class="input-field">
+          <i class="material-icons prefix">person</i>
+          <input type="text" id="username" >
+          <label for="username">email or phone no</label>
+        </div><br>
+        <div class="input-field">
+            <i class="material-icons prefix">lock</i>
+            <input type="text" id="password" >
+            <label for="password">password</label>
+          </div><br>
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in" checked="checked" />
+              <span>Remember Me</span>
+            </label>
+          </p>
+
+          <input type="submit" value="Sign In" class="btn btn">
+      </form>
+    </div>
+
+   
+  </div>
+                
+  <!-- Sign up -->
+
+  <div class="modal" id="signup">
+      <h5 class="modal-close">&#10005</h5>
+  
+      <div class="modal-content center">
+          <h4>Sign In</h4><br>
+        <form action="#">
+          <div class="input-field">
+            <i class="material-icons prefix">person</i>
+            <input type="text" id="username" >
+            <label for="username">Email</label>
+          </div><br>
+          <div class="input-field">
+              <i class="material-icons prefix">lock</i>
+              <input type="text" id="password" >
+              <label for="password">Phone No</label>
+            </div><br>
+          <div class="input-field">
+              <i class="material-icons prefix">lock</i>
+              <input type="text" id="password" >
+              <label for="password">Password</label>
+          </div><br>
+          <div class="input-field">
+              <i class="material-icons prefix">lock</i>
+              <input type="text" id="password" >
+              <label for="password">Confirm Password</label>
+          </div><br>
+
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" checked="checked" />
+                <span>Remember Me</span>
+              </label>
+            </p>
+  
+            <input type="submit" value="Sign In" class="btn btn">
+        </form>
+      </div>
+  
+     
+    </div>
+
+
+    </body>
+</html>

@@ -4,6 +4,7 @@ import { UserService } from '../../sharedservices/userservice/user.service';
 import { Tokentparams } from '../../database/tokentparams';
 import { Http } from '@angular/http';
 import { Router } from '@angular/router';
+import { AuthenticationService } from '../../sharedservices/authenticationservice/authentication.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -11,13 +12,27 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private authservice:AuthService,private user:UserService,private http:Http,router:Router) { }
+  username = 'javainuse'
+  password = ''
+  invalidLogin = false
+
+  constructor(private authservice:AuthService,private user:UserService,private http:Http,private router:Router
+    ,private loginservice: AuthenticationService) { }
 
   ngOnInit() {
   }
 tokenparams:Tokentparams;
-username:string;
-password:string;
+//username:string;
+//password:string;
+
+checkLogin() {
+  if (this.loginservice.authenticate(this.username, this.password)) 
+  {
+    this.router.navigate([''])
+    this.invalidLogin = false
+  } else
+    this.invalidLogin = true
+  }
 
   loginUser():void
   {
